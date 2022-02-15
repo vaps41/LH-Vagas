@@ -1,0 +1,46 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "nome": "Desenvolver BackEnd Pleno",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com Angular",
+      "salario": 6000
+    },
+    {
+      "id": 2,
+      "nome": " Desenvolver Front End Jr",
+      "foto": "foto2.jpg",
+      "descricao": " Trabalhar com Spring Boot",
+      "salario": "3250"
+    },
+    {
+      "id": 3,
+      "nome": "Desenvolver Fullstack Senior",
+      "foto": "foto3.jpg",
+      "descricao": "Trabalhar com Angular e Spring",
+      "salario": 9000
+    },
+    {
+      "id": 4,
+      "nome": "Pintor de produção",
+      "foto": "foto4.jpg",
+      "descricao": "Experiência em pintura automobilística, industrial e faróis e peças em geral.",
+      "salario": 1900
+    },
+    {
+      "id": 5,
+      "nome": "Analista de Artes",
+      "foto": "foto5.jpg",
+      "descricao": "Ter experiência com Pacote Adobe,Corel Draw,edição de imagens",
+      "salario": 2000
+    },
+    {
+      "id": 6,
+      "nome": "Analista de Marketing",
+      "foto": "foto6.jpg",
+      "descricao": "Acompanhar o desenvolvimento dos squads de produto",
+      "salario": 5000
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<div id="body">
+    <div id="cadastro">
+        <h2>Cadastrar</h2>
+        <form>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="id" [(ngModel)]="vaga.id">
+                <label for="floatingInput">Código da Vaga</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="nome" [(ngModel)]="vaga.nome">
+                <label for="floatingInput">Nome da Vaga</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="foto"
+                    [(ngModel)]="vaga.foto">
+                    <option selected>Selecione</option>
+                    <option value="foto1.jpg">Back End</option>
+                    <option value="foto2.jpg">Front End</option>
+                    <option value="foto3.jpg">Full Stack</option>
+                    <option value="foto4.jpg">Industrial</option>
+                    <option value="foto5.jpg">Arte</option>
+                    <option value="foto6.jpg">Marketing</option>
+                </select>
+                <label for="floatingSelect">Foto</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="descricao"
+                    [(ngModel)]="vaga.descricao">
+                <label for="floatingInput">Descrição da Vaga</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="salario" [(ngModel)]="vaga.salario">
+                <label for="floatingInput">Salário</label>
+            </div>
+            <div class="botao">
+                <button type="button" class="btn btn-outline-primary" (click)="cadastrar()">Cadastrar Vaga</button>
+                <button type="button" class="btn btn-outline-warning" (click)="atualizar(vaga.id)">Atualizar
+                    Vaga</button>
+            </div>
+        </form>
+    </div>
+    <div id="exclusao">
+        <h2>Excluir Vagas</h2>
+        <section class="lista-vagas">
+            <div *ngFor="let vaga of vagas">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets\img\vagas\{{vaga.foto}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Código da Vaga: {{vaga.id}}</h5>
+                        <h5 class="card-title">Vaga: {{vaga.nome}}</h5>
+                        <p class="card-text">Descricão da Vaga: {{vaga.descricao}}</p>
+                        <p class="card-text">Salário: R$ {{vaga.salario}},00</p>
+                        <button type="button" class="btn btn-outline-danger" (click)="excluir(vaga.id)">Excluir</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>
